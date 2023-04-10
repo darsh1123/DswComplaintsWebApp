@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const http = require("http");
 const bcrypt = require("bcrypt");
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 var mongoose = require("mongoose");
 const bodyparser = require("body-parser");
